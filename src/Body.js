@@ -7,8 +7,8 @@ class Body extends Component {
   render() {
     return (
       <div className="middle">
-          <Members />
-          <button className= "button-style"  type="button">Search for Books</button>
+        <Members />
+        <button className="button-style" type="button">Search for Books</button>
       </div>
     );
   }
