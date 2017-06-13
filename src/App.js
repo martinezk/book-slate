@@ -12,17 +12,21 @@ import {
   Link
 } from 'react-router-dom'
 
+import { Provider } from 'react-redux';
+import configureStore from './configure-store';
+
+const store = configureStore();
 
 class App extends Component {
-
-
   render() {
     return (
       <Router>
-        <div>
-          <Route path="/" component={Home} />
-          <Route path="/dashboard" component={Dashboard} />
-        </div>
+        <Provider store={store}>
+          <div>
+            <Route exact path="/" component={Home} />
+            <Route path="/Dashboard" component={Dashboard} />
+          </div>
+        </Provider>
       </Router>
     );
   }

@@ -1,35 +1,30 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;  
+.header{
+  height: 40px;
+  background-color:lightblue;
 }
-.button-style{
-  background: lightblue;
-  height: 66px;
-  width: 122px;
-  margin-top: 100px;
-}
-button:first-child {
-  margin-right:80px; 
-}
-.footer {
-  background: lightblue;
-  height: 100px; 
-}
-.header {
-  background: lightblue;
-  color: darkgray;
-  height: 100px;
+.home{
   position: relative;
-  text-align: left;
-  width:100%;   
 }
-.middle {
-  height: 438px;
-  width: 100%;
+.login{
+  float: right;
+  clear: left;
+}
+.main{
+  border: 1px solid black;
   text-align: center;
+  height: 375px;
+  font-size: 26px;
+  padding-top:60px;
+
 }
-.title {
-  bottom: 0;
-  position: absolute;
+.nav-bar{
+  border: 1px solid black;
+  display: inline;
+}
+.nav-bar div{
+  text-align: center;
+  background-color:lightblue;
+}
+.main button{
+  margin-top: 60px;
 }
