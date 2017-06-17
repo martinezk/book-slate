@@ -15,12 +15,12 @@ class Home extends Component {
         <div className="nav-bar">
           <ul>
             <li className="login"><Link to="/Dashboard">Login</Link></li>
-            <li>Bookmate</li>
+            <li className="title">    <i className="fa fa-book"></i> Bookmate</li>
           </ul>
         </div>
         <div className="main">
           <h1>Stay connected to friends. Manage your bookclub in one simple place</h1>
-          <button type="submit">Signup</button>
+          <button className="signup" type="submit">Signup</button>
         </div>
       </div>
     );
