@@ -12,14 +12,16 @@ body {
   background-image: url(images/home.jpg);
   background-size: cover;
   color: white;
-  font-size: 26px;
+  font-size: 24px;
   height: 420px; 
   margin-left: auto;
   margin-right: auto; 
+  margin-top: 10px;
   padding-top:36px;
   text-align: center;
   width: 90%;
   font-weight: bold;
+  filter: drop-shadow(0px 0px 5px #666);
 }
 .nav-bar{
   height: 40px;
@@ -42,7 +44,7 @@ button{
   display: inline-block;
   font-size: 16px;
   border-radius: 5px;
-  margin-top: 80px;
+  margin-top: 60px;
   width: 100px;
 }
 .login{
@@ -52,4 +54,19 @@ button{
 .title{
   font-weight: bold;
   font-size: 22px;
+}
+
+/*Dashboard styles*/
+.dashboard-main{
+  border: 1px solid darkgray;
+  margin-left: auto;
+  margin-right: auto;
+  height: 420px;
+  width: 90%;
+}
+/*Footer styles*/
+.footer{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }

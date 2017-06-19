@@ -6,7 +6,7 @@ class Header extends Component {
     return (
         <div className="nav-bar">
           <ul>
-            <li className="title">    <i className="fa fa-book"></i> Bookmate</li>
+            <li className="title">    <i className="fa fa-book"></i> Book Slate</li>
           </ul>
         </div>
     );

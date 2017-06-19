@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Header from './Header';
 import PeopleContainer from './PeopleContainer';
 import './index.css';
+import Search from './Search';
 
 class Dashboard extends Component {
 
@@ -10,12 +11,15 @@ class Dashboard extends Component {
     return (
       <div>
         <Header />
-        <ul>
-          <li>Members</li>
-          <li>Search Books</li>
-          <li>Nominations</li>
-        </ul>
-        <PeopleContainer />
+        <div className="dashboard-main">
+          <ul>
+            <li>Members</li>
+            <PeopleContainer />
+            <li>Search Books</li>
+            <Search />
+            <li>Nominations</li>
+          </ul>
+        </div>
         <Footer />
       </div>
     );

@@ -15,7 +15,7 @@ class Home extends Component {
         <div className="nav-bar">
           <ul>
             <li className="login"><Link to="/Dashboard">Login</Link></li>
-            <li className="title">    <i className="fa fa-book"></i> Bookmate</li>
+            <li className="title">    <i className="fa fa-book"></i> Book Slate</li>
           </ul>
         </div>
         <div className="main">
