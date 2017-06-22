@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import PeopleContainer from './PeopleContainer';
+import BookContainer from './BookContainer';
 import './index.css';
-import Search from './Search';
 
 class Dashboard extends Component {
 
@@ -12,13 +12,17 @@ class Dashboard extends Component {
       <div>
         <Header />
         <div className="dashboard-main">
-          <ul>
-            <li>Members</li>
+          <div className="dashboard-choices">
+            <h2>Members</h2>
             <PeopleContainer />
-            <li>Search Books</li>
-            <Search />
-            <li>Nominations</li>
-          </ul>
+          </div>
+          <div className="dashboard-choices">
+            <h2>Search</h2>
+            <BookContainer />
+          </div>
+          <div className="dashboard-choices">
+            <h2>Nominations</h2>
+          </div>
         </div>
         <Footer />
       </div>
