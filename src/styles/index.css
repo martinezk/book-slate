@@ -9,7 +9,7 @@ body {
   clear: left;
 }
 .main{
-  background-image: url(images/home.jpg);
+  background-image: url(../images/home.jpg);
   background-size: cover;
   color: white;
   font-size: 24px;

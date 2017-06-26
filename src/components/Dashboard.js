@@ -3,7 +3,7 @@ import Footer from './Footer';
 import Header from './Header';
 import PeopleContainer from './PeopleContainer';
 import BookContainer from './BookContainer';
-import './index.css';
+import '../styles/index.css';
 
 class Dashboard extends Component {
 

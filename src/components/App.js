@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import './index.css';
+import '../styles/App.css';
+import '../styles/index.css';
 import Members from './Members';
 import Dashboard from './Dashboard';
 import Footer from './Footer';
@@ -13,7 +13,7 @@ import {
 } from 'react-router-dom'
 
 import { Provider } from 'react-redux';
-import configureStore from './configure-store';
+import configureStore from '../configure-store';
 
 const store = configureStore();
 

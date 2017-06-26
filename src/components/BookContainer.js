@@ -1,7 +1,7 @@
 import React, {PropTypes, Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as bookActions from './actions/book-actions';
+import * as bookActions from '../actions/book-actions';
 import BookList from './BookList';
 import Search from './Search';
 
