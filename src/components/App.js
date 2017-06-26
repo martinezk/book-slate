@@ -6,10 +6,11 @@ import Dashboard from './Dashboard';
 import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
+import Search from './Search';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
 } from 'react-router-dom'
 
 import { Provider } from 'react-redux';
@@ -25,6 +26,9 @@ class App extends Component {
           <div>
             <Route exact path="/" component={Home} />
             <Route path="/Dashboard" component={Dashboard} />
+            <Route path="/members" component={Members} />
+            <Route path="/search" component={Search} />
+            <Route path="/reading-list" component={Dashboard} />
           </div>
         </Provider>
       </Router>

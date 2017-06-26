@@ -65,11 +65,24 @@ li{
   width: 90%;
 }
 .dashboard-choices{
-  display: inline;
+  
 }
 /*Footer styles*/
 .footer{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.top-nav {
+    background-color: gray;
+}
+
+.top-nav a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
