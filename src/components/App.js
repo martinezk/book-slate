@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import '../styles/App.css';
-import '../styles/index.css';
 import Members from './Members';
 import Dashboard from './Dashboard';
-import Footer from './Footer';
-import Header from './Header';
+import ReadingList from './ReadingList';
 import Home from './Home';
 import Search from './Search';
 import {
@@ -28,7 +26,7 @@ class App extends Component {
             <Route path="/Dashboard" component={Dashboard} />
             <Route path="/members" component={Members} />
             <Route path="/search" component={Search} />
-            <Route path="/reading-list" component={Dashboard} />
+            <Route path="/reading-list" component={ReadingList} />
           </div>
         </Provider>
       </Router>
