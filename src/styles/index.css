@@ -4,10 +4,6 @@ body {
 .home:{
   width: 968px;
 }
-.login{
-  float: right;
-  clear: left;
-}
 .main{
   background-image: url(../images/home.jpg);
   background-size: cover;
@@ -50,10 +46,12 @@ li{
 .login{
   font-size: 15px;
   color: #425ff4;
+  float: right;
 }
-.title{
+.title a{
   font-weight: bold;
   font-size: 22px;
+  text-decoration: none;
 }
 
 /*Dashboard styles*/
@@ -65,7 +63,13 @@ li{
   width: 90%;
 }
 .dashboard-choices{
-  
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  margin-top: 45px;
+}
+.dashboard-choices h2{
+  margin-bottom:30px;
 }
 /*Footer styles*/
 .footer{
