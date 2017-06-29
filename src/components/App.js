@@ -4,7 +4,7 @@ import Members from './Members';
 import Dashboard from './Dashboard';
 import ReadingList from './ReadingList';
 import Home from './Home';
-import Search from './Search';
+import SearchResultContainer from './SearchResultContainer';
 import {
   BrowserRouter as Router,
   Route,
@@ -24,7 +24,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/Dashboard" component={Dashboard} />
             <Route path="/members" component={Members} />
-            <Route path="/search" component={Search} />
+            <Route path="/search" component={SearchResultContainer} />
             <Route path="/reading-list" component={ReadingList} />
           </div>
         </Provider>

@@ -1,11 +1,11 @@
 import React from 'react';
 import BasePage from './BasePage';
+import BookContainer from './BookContainer';
 
 const ReadingList = () => (
   <BasePage>
-    <div className="members">
-        <h2>Next Books</h2>
-    </div>
+    <h2>My Reading List</h2>
+    <BookContainer />
   </BasePage>
 );
 export default ReadingList;
