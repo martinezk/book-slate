@@ -3,8 +3,6 @@ import '../styles/App.css';
 import '../styles/index.css';
 import Header from './Header';
 import {
-  BrowserRouter as Router,
-  Route,
   Link
 } from 'react-router-dom'
 

@@ -8,7 +8,6 @@ import Search from './Search';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
 } from 'react-router-dom'
 
 import { Provider } from 'react-redux';

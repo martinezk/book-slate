@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
-import PeopleContainer from './PeopleContainer';
-import BookContainer from './BookContainer';
 import TopNav from './TopNav';
 import '../styles/index.css';
 

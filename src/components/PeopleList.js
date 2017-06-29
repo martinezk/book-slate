@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React, {PropTypes} from 'prop-types';
 import Person from './Person';
 
 const PeopleList = ({people}) => {
