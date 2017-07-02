@@ -6,3 +6,9 @@ export const addBook = (book) => {
     book
   };
 }
+export const searchBooks = (title) => {
+  return {
+    type: types.SEARCH_BOOK,
+    title
+  }
+}
