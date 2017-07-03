@@ -6,7 +6,7 @@ export default (state = [], action) => {
       return [...state, Object.assign({}, action.book)];
     case types.SEARCH_BOOK:
       return state;
-      //placeholder, should return search results
+      //should return search results
     default:
       return state;
   }
