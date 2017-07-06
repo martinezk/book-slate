@@ -5,17 +5,14 @@ import {bindActionCreators} from 'redux';
 import * as bookActions from '../actions/book-actions';
 import BookList from './BookList';
 import Search from './Search';
-import BasePage from './BasePage';
 
 class BookContainer extends Component {
   render() {
     const {books} = this.props;
 
     return (
-      <BasePage>
         <Search addBook={this.props.actions.addBook}/>
         <BookList books={books} />
-      </BasePage>
     );
   }
 }

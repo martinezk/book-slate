@@ -1,11 +1,10 @@
 import React from 'react';
-import BasePage from './BasePage';
 import BookContainer from './BookContainer';
 
 const ReadingList = () => (
-  <BasePage>
+  <div>
     <h2>My Reading List</h2>
     <BookContainer />
-  </BasePage>
+  </div>
 );
 export default ReadingList;

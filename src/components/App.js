@@ -5,6 +5,7 @@ import Dashboard from './Dashboard';
 import ReadingList from './ReadingList';
 import Search from './Search';
 import Home from './Home';
+import BasePage from './BasePage';
 import {connect} from 'react-redux';
 import {
   BrowserRouter as Router,
@@ -21,19 +22,27 @@ class AppRouter extends Component {
     return (
         <div>
           <Route exact path="/" render = { (routeProps) =>(
-            <Home  {...props} {...routeProps}  />
+            <Home  {...props} {...routeProps} />
           )} />
           <Route path="/Dashboard" render= {(routeProps) => (
-            <Dashboard {...props} {...routeProps} />
+            <BasePage key= {routeProps.location.pathname} {...props} {...routeProps}> 
+              <Dashboard {...props} {...routeProps} />
+            </BasePage>
           )} />
           <Route path="/members" render = {(routeProps) =>(
-            <Members {...props} {...routeProps} />
+            <BasePage key= {routeProps.location.pathname} {...props} {...routeProps}> 
+              <Members/>
+            </BasePage>
            )} />
           <Route path="/search" render = {(routeProps) =>(
-            <Search {...props} {...routeProps} />
+            <BasePage key= {routeProps.location.pathname} {...props} {...routeProps}> 
+              <Search/>
+            </BasePage>
            )} />
           <Route path="/reading-list" render = {(routeProps) =>(
-            <ReadingList {...props} {...routeProps} />
+            <BasePage key= {routeProps.location.pathname} {...props} {...routeProps}> 
+              <ReadingList/>
+            </BasePage>
            )} />
         </div>
     )

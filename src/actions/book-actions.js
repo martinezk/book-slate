@@ -6,9 +6,10 @@ export const addBook = (book) => {
     book
   };
 }
-export const searchBooks = (title) => {
+export const searchBooks = (query) => {
   return {
     type: types.SEARCH_BOOK,
-    title
+    query
   }
 }
+

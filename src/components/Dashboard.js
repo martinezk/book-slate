@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import BasePage from './BasePage';
 import { Link } from 'react-router-dom';
 
 class Dashboard extends Component {
 
   render() {
     return (
-      <BasePage>
+      <div>
         <div className="dashboard-choices">
           <Link to="/members"><h2>Members</h2>
           <i className="fa fa-user-circle-o fa-5x" aria-hidden="true"></i>
@@ -23,7 +22,7 @@ class Dashboard extends Component {
           <i className="fa fa-bookmark fa-5x" aria-hidden="true"></i>
           </Link>
         </div>
-      </BasePage>
+      </div>
     );
   }
 }
