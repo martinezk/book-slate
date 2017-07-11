@@ -9,10 +9,13 @@ import Search from './Search';
 class BookContainer extends Component {
   render() {
     const {books} = this.props;
+    console.log(this.props);
 
     return (
-        <Search addBook={this.props.actions.addBook}/>
+      <div>
+        <Search addSearchResult={this.props.actions.addSearchResult}/>
         <BookList books={books} />
+      </div>
     );
   }
 }

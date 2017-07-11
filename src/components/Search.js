@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {axios} from 'axios';
+import axios from 'axios';
 
 class Search extends Component {
   constructor(props) {
@@ -13,10 +13,9 @@ class Search extends Component {
 
   onSubmitHandler = (event) => {
     event.preventDefault();
-    console.log(event.target.title.value);
-    /*this.props.addBook({
+   /* this.props.addSearchResult({
       title: event.target.title.value
-    });*/
+};*/
   }
   handleChange(event){
     this.setState({ query: event.target.value })
@@ -24,10 +23,13 @@ class Search extends Component {
   searchBooks(){
     this.props.searchBooks(this.state.query);
   }
-  /*componentDidMount(){
+  componentDidMount(){
     axios
       .get(`https://www.googleapis.com/books/v1/volumes?q=harry+potter`)
-  }*/
+      .then( (response) => {
+        console.log(response.data.items);
+      })
+  }
   render() {
     return (
       <div className="search">

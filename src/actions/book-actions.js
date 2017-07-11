@@ -12,4 +12,10 @@ export const searchBooks = (query) => {
     query
   }
 }
+export const addSearchResult = (result) => {
+  return {
+    type: types.ADD_SEARCH_RESULT,
+    result
+  };
+}
 
