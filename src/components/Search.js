@@ -13,29 +13,16 @@ class Search extends Component {
 
   onSubmitHandler = (event) => {
     event.preventDefault();
-    /* 
-    use the input to search the books api
-    retreive the first 10 results
-    display them in the component
-    */
-    this.props.addSearchResult({
-      title: event.target.title.value
-});
+    axios
+      .get(`https://www.googleapis.com/books/v1/volumes?q=` + event.target.title.value)
+      .then( (response) => {
+        this.props.addSearchResult(response.data.items);
+      })
   }
   handleChange(event){
     this.setState({ query: event.target.value })
   }
-  searchBooks(){
-    this.props.searchBooks(this.state.query);
-  }
-  componentDidMount(){
-    axios
-      .get(`https://www.googleapis.com/books/v1/volumes?q=harry+potter`)
-      .then( (response) => {
-        /*console.log(response.data.items["0"].volumeInfo.title); */
-        this.props.addSearchResult(response.data.items);
-      })
-  }
+
   render() {
     return (
       <div className="search">
