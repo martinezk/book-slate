@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 const Book = ({book}) => {
   return (
     <div>
-      {book.title}, {book.author}
+      <h4>{book.volumeInfo.title}</h4>
+      <p>{book.volumeInfo.authors.join(', ')}</p>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import * as bookActions from '../actions/book-actions';
+import * as searchResultActions from '../actions/search-result-actions';
 import BookList from './BookList';
 import Search from './Search';
 
@@ -33,7 +33,7 @@ function mapStateToProps(state, props) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators( bookActions, dispatch)
+    actions: bindActionCreators( searchResultActions, dispatch)
   }
 }
 
