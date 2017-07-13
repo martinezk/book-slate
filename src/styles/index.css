@@ -109,3 +109,15 @@ li{
   margin: 10px;
 }
 
+.results {
+  border: 1px solid gray;
+  width: 220px;
+}
+.search-results button{
+  padding: 10px;
+  font-size: 12px;
+  margin: 5px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+}

@@ -1,15 +1,14 @@
-import React, {PropTypes} from 'prop-types';
+import React from 'react';
+import {PropTypes} from 'prop-types';
 import Person from './Person';
 
-const PeopleList = ({people}) => {
-  return (
+const PeopleList = ({people}) => (
     <div>
       {people.map((person) => 
         <Person key={person.lastname} person={person} />  
       )}
     </div>
-  );
-};
+);
 
 PeopleList.propTypes = {
   people: PropTypes.array.isRequired
