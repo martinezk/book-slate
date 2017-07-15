@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as searchResultActions from '../actions/search-result-actions';
+import * as bookActions from '../actions/book-actions';
 import BookList from './BookList';
 import Search from './Search';
 
@@ -14,7 +15,7 @@ class BookContainer extends Component {
     return (
       <div>
         <Search addSearchResult={this.props.actions.addSearchResult}/>
-        <BookList books={books} />
+        <BookList addBook={this.props.bookActions.addBook} books={books} />
       </div>
     );
   }
@@ -22,7 +23,8 @@ class BookContainer extends Component {
 
 BookContainer.propTypes = {
   books: PropTypes.array.isRequired,
-  actions: PropTypes.object.isRequired
+  actions: PropTypes.object.isRequired,
+  bookActions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, props) {
@@ -33,7 +35,8 @@ function mapStateToProps(state, props) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators( searchResultActions, dispatch)
+    actions: bindActionCreators( searchResultActions, dispatch),
+    bookActions: bindActionCreators( bookActions, dispatch)
   }
 }
 

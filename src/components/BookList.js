@@ -2,18 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Book from './Book';
 
-const BookList = ({books}) => {
+const BookList = ({addBook, books}) => {
   return (
     <div>
       {books.map((book) => 
-        <Book key={book.volumeInfo.title} book={book} />  
+        <Book addBook={addBook} key={book.volumeInfo.title} book={book} />  
       )}
     </div>
   );
 };
 
 BookList.propTypes = {
- books: PropTypes.array.isRequired
+ books: PropTypes.array.isRequired,
+ addBook: PropTypes.func
 };
 
 export default BookList;
