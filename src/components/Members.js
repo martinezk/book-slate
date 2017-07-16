@@ -2,10 +2,14 @@ import React, {Component} from 'react';
 import PeopleContainer from './PeopleContainer';
 
 const Members = () => (
-    <div className="members">
-        <h2>My Book Club</h2>
+    <div className="members-container"> 
+        <h2>Current Members</h2>
+        <div>
+            <p className="name">Jane Austen</p>
+            <p className="email">j.austen@nineteenthcentury.com</p>
+            <a className="delete">&#10006;</a>            
+        </div>    
         <PeopleContainer />
-        <button className="button-style" type="button">My Book Club</button>
     </div>
 );
 export default Members;

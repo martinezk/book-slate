@@ -5,7 +5,7 @@ import Person from './Person';
 const PeopleList = ({people}) => (
     <div>
       {people.map((person) => 
-        <Person key={person.lastname} person={person} />  
+        <Person key={person.email} person={person} />  
       )}
     </div>
 );

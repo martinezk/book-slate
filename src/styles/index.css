@@ -87,11 +87,15 @@ li{
   text-decoration: none;
   font-size: 17px;
 }
+.top-nav a:hover, .active{
+  background-color: limegreen;
+}
 .search input{
   padding: 10px;
   font-size: 16px;
   border: 2px solid grey;
 }
+
 .search button{
   padding: 10px;
   font-size: 16px;
@@ -133,4 +137,46 @@ li{
 .credit-style {
   display:inline-block;
   padding:2px 3px;
+}
+
+/* Member */
+.members{
+  margin: 30px;
+  width: 500px;
+}
+#name, .name {
+  width: 150px;
+}
+#email, .email {
+  width: 200px;
+}
+.members-container{
+  margin-top: 20px;
+  font-size: 18px;
+}
+.members-container h2{
+  margin-bottom: 20px;
+}
+.members input{
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid grey;
+  margin-right:10px;
+}
+.members button{
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  background-color: #0066FF;
+  color: #FFF;
+  border: 2px solid #0066FF;
+}
+.name, .email {
+  display: inline;
+  margin-right:10px;
+  border: 2px solid grey;
+  padding: 5px;
+}
+.members-container h2, .name {
+  margin-left: 30px;
 }
