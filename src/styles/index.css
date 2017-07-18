@@ -56,7 +56,7 @@ li{
   border: 1px solid darkgray;
   margin-left: auto;
   margin-right: auto;
-  height: 420px;
+  height: 450px;
   width: 90%;
 }
 .dashboard-choices{
@@ -87,8 +87,11 @@ li{
   text-decoration: none;
   font-size: 17px;
 }
-.top-nav a:hover, .active{
+.top-nav .active{
   background-color: limegreen;
+}
+.top-nav a:hover{
+  text-decoration: underline;
 }
 .search input{
   padding: 10px;
@@ -140,23 +143,20 @@ li{
 }
 
 /* Member */
-.members{
-  margin: 30px;
-  width: 500px;
-}
-#name, .name {
+#name {
+  margin-left: 20px;
   width: 150px;
 }
-#email, .email {
+#email{
   width: 200px;
 }
-.members-container{
-  margin-top: 20px;
-  font-size: 18px;
-}
+
 .members-container h2{
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
+
 .members input{
   padding: 10px;
   font-size: 16px;
@@ -171,12 +171,31 @@ li{
   color: #FFF;
   border: 2px solid #0066FF;
 }
-.name, .email {
-  display: inline;
+.name {
+  display: inline-block;
+  margin-left: 20px;
   margin-right:10px;
+  margin-top: 2px;
   border: 2px solid grey;
   padding: 5px;
+  width: 160px;
 }
-.members-container h2, .name {
-  margin-left: 30px;
+.email {
+  display: inline-block;
+  margin-right:10px;
+  margin-top:2px;
+  border: 2px solid grey;
+  padding: 5px;
+  width: 280px;
+}
+h3{
+  margin-left: 20px;
+}
+.person-input{
+  position: fixed;
+  margin-top: 20px;
+  bottom: 70px
+}
+.current-members{
+  overflow-y:auto;
 }

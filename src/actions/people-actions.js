@@ -6,3 +6,9 @@ export const addPerson = (person) => {
     person
   };
 }
+export const deletePerson = (person) => {
+  return {
+    type: types.DELETE_PERSON,
+    person
+  };
+}

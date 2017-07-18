@@ -14,7 +14,7 @@ class PeopleContainer extends Component {
       <div className="members">
         <PeopleList people={people} />
         <PersonInput addPerson={this.props.actions.addPerson} />        
-      </div>
+      </div> 
     );
   }
 }

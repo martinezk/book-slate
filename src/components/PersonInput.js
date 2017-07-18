@@ -28,13 +28,14 @@ class PersonInput extends Component {
 
   render() {
     return (
-      <div>
+      <div className="person-input">
+        <h3>Add a Member</h3>
         <input id="name" type="text" placeholder="Name" />
         <input id="email" type="text" placeholder="Email" />
         <button onClick={this.onAddPersonClick}>Add</button>
       </div>
     );
-  }
+  } 
 }
 
 PersonInput.propTypes = {
