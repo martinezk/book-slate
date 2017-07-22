@@ -5,7 +5,11 @@ export default (state = [], action) => {
     case types.ADD_PERSON:
       return [...state, Object.assign({}, action.person)];
     case types.DELETE_PERSON:
-      return state;
+      let index = state.indexOf(action.person);
+      if (index > -1) {
+        state.splice(index, 1);
+      }
+      return [...state];
     default:
       return state;
   }

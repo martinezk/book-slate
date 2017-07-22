@@ -113,13 +113,17 @@ li{
 }
 
 .results {
+  padding-top: 5px;
   border: 1px solid gray;
   width: 220px;
+  display:inline-block;
 }
 .search-results button{
+  display: inline-block;
+  width: 40px;
   padding: 10px;
   font-size: 12px;
-  margin: 5px;
+  margin-left: 5px;
   background-color: #0066FF;
   color: #FFF;
   border: 2px solid #0066FF;
@@ -198,4 +202,11 @@ h3{
 }
 .current-members{
   overflow-y:auto;
+}
+.book-list{
+  overflow-y: scroll;
+  height: 305px;
+}
+.reading-list h2 {
+  height: 100px;
 }

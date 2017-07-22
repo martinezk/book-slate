@@ -10,7 +10,6 @@ class Search extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
   }
-
   onSubmitHandler = (event) => {
     event.preventDefault();
     axios

@@ -4,7 +4,7 @@ import Book from './Book';
 
 const BookList = ({addBook, books}) => {
   return (
-    <div>
+    <div className="book-list">
       {books.map((book) => 
         <Book addBook={addBook} key={book.volumeInfo.title} book={book} />  
       )}

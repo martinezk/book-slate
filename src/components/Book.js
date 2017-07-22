@@ -1,10 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({book, addBook}) => {
-  let button;
+const Book = ({ book, addBook }) => {
+  let onAddBookClick = function () {
+    let confirmAddBook = window.confirm('Add this title?');
+    if (confirmAddBook == true) {
+      addBook(book)
+    }
+  }
+  let addBookButton; 
   if (addBook){
-    button = <button onClick={() => addBook(book)} value="Submit">Add</button>;
+    addBookButton= <button onClick={onAddBookClick} value="Submit">Add</button>
   }
   return (
     <div className="search-results">
@@ -12,7 +18,8 @@ const Book = ({book, addBook}) => {
         <h4>{book.volumeInfo.title}</h4>
         <p>{book.volumeInfo.authors.join(', ')}</p>
       </div>
-      {button}
+      {addBookButton}
+      <button value="Submit">Info</button>
     </div>
   );
 };
