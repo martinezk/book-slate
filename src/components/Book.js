@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = ({ book, addBook }) => {
+const Book = ({ book, addBook, bookInfo }) => {
   let onAddBookClick = function () {
     let confirmAddBook = window.confirm('Add this title?');
     if (confirmAddBook == true) {
@@ -12,6 +12,13 @@ const Book = ({ book, addBook }) => {
   if (addBook){
     addBookButton= <button onClick={onAddBookClick} value="Submit">Add</button>
   }
+  let onInfoClick = function () {
+    bookInfo(book.volumeInfo.description)
+  }
+  let infoButton; 
+  if (bookInfo){
+    infoButton= <button onClick={onInfoClick} value="Submit">Info</button>
+  }
   return (
     <div className="search-results">
       <div className="results">
@@ -19,14 +26,15 @@ const Book = ({ book, addBook }) => {
         <p>{book.volumeInfo.authors.join(', ')}</p>
       </div>
       {addBookButton}
-      <button value="Submit">Info</button>
+      {infoButton}
     </div>
   );
 };
 
 Book.propTypes = {
   book: PropTypes.object.isRequired,
-  addBook: PropTypes.func
+  addBook: PropTypes.func,
+  bookInfo: PropTypes.func
 };
 
 export default Book;

@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import * as searchResultActions from '../actions/search-result-actions';
 import * as bookActions from '../actions/book-actions';
 import BookList from './BookList';
@@ -9,34 +9,43 @@ import Search from './Search';
 
 class BookContainer extends Component {
   render() {
-    const {books} = this.props;
+    const { searchState } = this.props;
     console.log(this.props);
 
     return (
-      <div>
-        <Search addSearchResult={this.props.actions.addSearchResult}/>
-        <BookList addBook={this.props.bookActions.addBook} books={books} />
+      <div className="search-result-container">
+        <Search addSearchResult={this.props.actions.addSearchResult} />
+        <div className="search-description">
+          <BookList 
+            addBook={this.props.bookActions.addBook} 
+            bookInfo={this.props.actions.bookInfo} 
+            books={searchState.results}
+          />
+          <div className="description">
+            {searchState.info}
+          </div>
+        </div>
       </div>
     );
   }
 }
 
 BookContainer.propTypes = {
-  books: PropTypes.array.isRequired,
+  searchState: PropTypes.object.isRequired,
   actions: PropTypes.object.isRequired,
   bookActions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, props) {
   return {
-    books: state.searchResults || []
+    searchState: state.searchResults
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators( searchResultActions, dispatch),
-    bookActions: bindActionCreators( bookActions, dispatch)
+    actions: bindActionCreators(searchResultActions, dispatch),
+    bookActions: bindActionCreators(bookActions, dispatch)
   }
 }
 

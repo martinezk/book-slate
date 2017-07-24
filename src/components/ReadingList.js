@@ -3,7 +3,7 @@ import BookContainer from './BookContainer';
 
 const ReadingList = () => (
   <div className="reading-list">
-    <h2>My Reading List</h2>
+    <h2>Nominations</h2>
     <BookContainer />
   </div>
 );

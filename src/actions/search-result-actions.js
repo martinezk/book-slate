@@ -12,3 +12,9 @@ export const searchBooks = (query) => {
     query
   }
 }
+export const bookInfo = (book) => {
+  return {
+    type: types.BOOK_INFO,
+    book
+  }
+}

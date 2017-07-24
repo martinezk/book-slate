@@ -115,7 +115,7 @@ li{
 .results {
   padding-top: 5px;
   border: 1px solid gray;
-  width: 220px;
+  width: 340px;
   display:inline-block;
 }
 .search-results button{
@@ -204,9 +204,20 @@ h3{
   overflow-y:auto;
 }
 .book-list{
+  display: inline-block;
   overflow-y: scroll;
   height: 305px;
+  width: 470px;
 }
 .reading-list h2 {
   height: 100px;
+}
+.description{
+  float: right;
+  display: inline-block;
+  width: 300px;
+  border: 1px solid black;
+}
+.about{
+  text-align: center;
 }
