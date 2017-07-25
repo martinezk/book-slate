@@ -210,7 +210,9 @@ h3{
   width: 470px;
 }
 .reading-list h2 {
-  height: 100px;
+  height: 95px;
+  font-size: 18px;
+  margin: 5px;
 }
 .description{
   float: right;
@@ -220,4 +222,13 @@ h3{
 }
 .about{
   text-align: center;
+}
+.nominations{
+  border: 1px solid black;
+  float: right;
+  display: inline-block;
+  width: 300px;
+}
+.nominations h2{
+  margin: 10px;
 }

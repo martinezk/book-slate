@@ -12,9 +12,24 @@ class TopNav extends Component {
     return (
         <div className="top-nav">
           <Link className={page==="/dashboard" ? "active" : ""} to="/dashboard">Main</Link>
-          <Link className={page==="/members" ? "active" : ""} to="/members">Members</Link>
-          <Link className={page==="/search" ? "active" : ""} to="/search">Book Search</Link>
-          <Link className={page==="/reading-list" ? "active" : ""} to="/reading-list">Reading List</Link>
+          <Link 
+            title="Manage current club members"
+            className={page==="/members" ? "active" : ""} 
+            to="/members">
+            Members
+          </Link>
+          <Link 
+            title="Discover your group's next read"
+            className={page==="/search" ? "active" : ""} 
+            to="/search">
+            Book Search
+          </Link>
+          <Link 
+            title="Nominate your next reading adventure"
+            className={page==="/reading-list" ? "active" : ""} 
+            to="/reading-list">
+            Reading List
+          </Link>
           <Link className={page==="/about" ? "active" : ""} to="/about" style={floatR} >About</Link>
         </div>
     );
