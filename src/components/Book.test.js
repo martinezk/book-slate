@@ -25,15 +25,15 @@ it('renders addBook button', () => {
 
 });
 
-it('renders Info button', () => {
+it('renders bookInfo button', () => {
   const div = document.createElement('div');
   let bookProp = {
       volumeInfo: {
         authors:[]
       }
   };
-  ReactDOM.render(<Book bookInfo={function(){}} book={bookProp} />, div);
-  //test to see if button is here
+  const wrapper = shallow(<Book bookInfo={function(){}} book={bookProp} />);
+  expect(wrapper.find('button').length).toEqual(1);
 
 });
 
