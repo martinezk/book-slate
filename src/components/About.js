@@ -5,9 +5,9 @@ const About = () => (
     <h1>About this app</h1>
     <h2>This app was created using:</h2>
     <ul>
-        <li>create-react-app</li>
+        <li>react, redux, create-react-app</li>
         <li>html, css, javascript</li>
-        <li></li>
+        <li>node.js, mocha, chai </li>
     </ul>
   </div>
 );
