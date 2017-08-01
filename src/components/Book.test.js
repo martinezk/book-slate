@@ -10,7 +10,8 @@ it('renders without crashing', () => {
         authors:[]
       }
   };
-  ReactDOM.render(<Book book={bookProp} />, div);
+  const wrapper = shallow(<Book book={bookProp} />);
+  expect(wrapper.find('button').length).toEqual(0);
 });
 
 it('renders addBook button', () => {
