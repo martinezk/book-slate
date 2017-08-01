@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Book from './Book';
+import { shallow, mount, render } from 'enzyme';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -19,9 +20,9 @@ it('renders addBook button', () => {
         authors:[]
       }
   };
-  let dom = ReactDOM.render(<Book addBook={function(){}} book={bookProp} />, div);
-  //test to see if button is here
-  expect(dom).toEqual();
+  const wrapper = shallow(<Book addBook={function(){}} book={bookProp} />);
+  expect(wrapper.find('button').length).toEqual(1);
+
 });
 
 it('renders Info button', () => {
