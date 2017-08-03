@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Book = ({ book, addBook, bookInfo }) => {
   let onAddBookClick = function () {
     let confirmAddBook = window.confirm('Add this title to the Reading List?');
-    if (confirmAddBook == true) {
+    if (confirmAddBook === true) {
       addBook(book)
     }
   }

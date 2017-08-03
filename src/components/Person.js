@@ -7,7 +7,7 @@ import * as peopleActions from '../actions/people-actions';
 const Person = ({ person, actions }) => {
   let onDeleteClick = function(){
     let deleteEntry = window.confirm('Are you sure you want to delete this memeber?');   
-    if (deleteEntry == true){
+    if (deleteEntry === true){
       actions.deletePerson(person);
     } 
 };
