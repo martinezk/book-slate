@@ -198,37 +198,44 @@ h3{
 .person-input{
   position: fixed;
   margin-top: 20px;
-  bottom: 70px
+  bottom: 80px
 }
 .current-members{
   overflow-y:auto;
 }
 .book-list{
   display: inline-block;
-  overflow-y: scroll;
-  height: 305px;
-  width: 470px;
+  overflow-y: auto;
+  height: 300px;
+  width: 50%;
+}
+.reading-list{
+  width: 100%;
 }
 .reading-list h2 {
-  height: 95px;
   font-size: 18px;
-  margin: 5px;
+  margin: 10px 10px 78px 10px;
 }
 .description{
-  float: right;
   display: inline-block;
-  width: 300px;
-  border: 1px solid black;
+  width: 50%;
+  height: 300px;
+  overflow-y: auto;
 }
 .about{
   text-align: center;
 }
 .nominations{
-  border: 1px solid black;
-  float: right;
   display: inline-block;
-  width: 300px;
+  width:50%;
+  height: 300px;
+  text-align: center;
+  vertical-align: top;
 }
 .nominations h2{
   margin: 10px;
+  text-decoration: underline;
+}
+.nominations p{
+  margin-bottom: 10px;
 }
