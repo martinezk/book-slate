@@ -68,6 +68,10 @@ li{
 .dashboard-choices h2{
   margin-bottom:30px;
 }
+.dashboard-choices h3{
+  text-decoration: none;
+  margin: 20px;
+}
 /*Footer styles*/
 .footer{
   width: 90%;
@@ -98,7 +102,9 @@ li{
   font-size: 16px;
   border: 2px solid grey;
 }
-
+.search-description, .search {
+  margin-left: 10px;
+}
 .search button{
   padding: 10px;
   font-size: 16px;
@@ -117,6 +123,7 @@ li{
   border: 1px solid gray;
   width: 340px;
   display:inline-block;
+  margin-left: 10px;
 }
 .search-results button{
   display: inline-block;
@@ -192,13 +199,13 @@ li{
   padding: 5px;
   width: 280px;
 }
-h3{
-  margin-left: 20px;
-}
 .person-input{
   position: fixed;
   margin-top: 20px;
   bottom: 80px
+}
+.person-input h3{
+  margin-left: 20px;
 }
 .current-members{
   overflow-y:auto;
@@ -224,6 +231,18 @@ h3{
 }
 .about{
   text-align: center;
+  width: 45%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.about h1{
+  font-size: 20px;
+  margin: 20px;
+  color: #0066FF;
+}
+.about h2{
+  font-size: 18px;
+  margin: 10px;
 }
 .nominations{
   display: inline-block;
@@ -238,4 +257,137 @@ h3{
 }
 .nominations p{
   margin-bottom: 10px;
+}
+/*animation styles */
+
+
+#contentArea {
+  width: 508px;
+}
+
+._2iwo {
+  height: 300px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+._2iwq {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  background: #f6f7f8;
+  background-image: -webkit-gradient(linear, left center, right center, from(#f6f7f8), color-stop(0.2, #edeef1), color-stop(0.4, #f6f7f8), to(#f6f7f8));
+  background-image: -webkit-linear-gradient(left, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 200px;
+  height: 200px;
+  position: relative;
+}
+
+._2rtk ._2iwq {
+  -webkit-animation-name: prideShimmer;
+  background-image: -webkit-gradient(linear, center top, center bottom, from(deg), color-stop(0, red), color-stop(0.15, orange), color-stop(0.3, yellow), color-stop(0.45, green), color-stop(0.6, blue), color-stop(0.75, indigo), color-stop(0.8, violet), to(red));
+  background-image: -webkit-linear-gradient(135deg, red 0%, orange 15%, yellow 30%, green 45%, blue 60%, indigo 75%, violet 80%, red 100%);
+  background-repeat: repeat;
+  background-size: 50% auto;
+}
+
+.direction_rtl ._2iwq {
+  -webkit-animation-direction: reverse;
+}
+
+._2iwq div {
+  background: #fff;
+  height: 10px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+div._2iwr {
+  height: 200px;
+  left: 175px;
+  right: auto;
+  top: 0;
+  width: 8px;
+}
+
+div._2iws {
+  height: 8px;
+  left: 48px;
+  top: 0;
+}
+
+div._2iwt {
+  left: 136px;
+  top: 8px;
+}
+
+div._2iwu {
+  height: 12px;
+  left: 48px;
+  top: 14px;
+}
+
+div._2iwv {
+  left: 100px;
+  top: 26px;
+}
+
+div._2iww {
+  height: 10px;
+  left: 48px;
+  top: 32px;
+}
+
+div._2iwx {
+  height: 10px;
+  top: 45px;
+}
+
+div._2iwy {
+  left: 410px;
+  top: 60px;
+}
+
+div._2iwz {
+  height: 10px;
+  top: 95px;
+}
+
+div._2iw- {
+  left: 440px;
+  top: 79px;
+}
+
+div._2iw_ {
+  height: 10px;
+  top: 145px;
+}
+
+div._2ix0 {
+  left: 178px;
+  top: 98px;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+@-webkit-keyframes prideShimmer {
+  from {
+    background-position: top left;
+  }
+
+  to {
+    background-position: top right;
+  }
 }

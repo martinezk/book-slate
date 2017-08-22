@@ -2,12 +2,9 @@ import React, {Component} from 'react';
 import {PropTypes} from 'prop-types';
 
 class PersonInput extends Component {
-  constructor(props) {
-    super(props);
-    this.onAddPersonClick = this.onAddPersonClick.bind(this);
-  }
 
-  onAddPersonClick() {
+  onFormSubmit = (event) => {
+    event.preventDefault();
     const nameElement = document.getElementById('name');
     const emailElement = document.getElementById('email');
 
@@ -30,9 +27,11 @@ class PersonInput extends Component {
     return (
       <div className="person-input">
         <h3>Add a Member</h3>
-        <input id="name" type="text" placeholder="Name" />
-        <input id="email" type="text" placeholder="Email" />
-        <button onClick={this.onAddPersonClick}>Add</button>
+        <form onSubmit={this.onFormSubmit}>
+          <input id="name" type="text" placeholder="Name" required />
+          <input id="email" type="email" name="email" placeholder="Email" required />
+          <button type="submit">Add</button>
+        </form>
       </div>
     );
   } 
