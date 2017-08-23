@@ -65,9 +65,7 @@ li{
   text-align: center;
   margin-top: 45px;
 }
-.dashboard-choices h2{
-  margin-bottom:30px;
-}
+
 .dashboard-choices h3{
   text-decoration: none;
   margin: 20px;
@@ -101,6 +99,7 @@ li{
   padding: 10px;
   font-size: 16px;
   border: 2px solid grey;
+  margin-left: 20px;
 }
 .search-description, .search {
   margin-left: 10px;
@@ -113,9 +112,9 @@ li{
   color: #FFF;
   border: 2px solid #0066FF;
 }
-.search h2{
+.search h2, .members-container h2, .reading-list h2 {
   font-size: 18px;
-  margin: 10px;
+  margin: 20px 0px 20px 20px;
 }
 
 .results {
@@ -160,12 +159,6 @@ li{
 }
 #email{
   width: 200px;
-}
-
-.members-container h2{
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-bottom: 10px;
 }
 
 .members input{
@@ -213,16 +206,12 @@ li{
 .book-list{
   display: inline-block;
   overflow-y: auto;
-  height: 300px;
   width: 50%;
 }
 .reading-list{
   width: 100%;
 }
-.reading-list h2 {
-  font-size: 18px;
-  margin: 10px 10px 78px 10px;
-}
+
 .description{
   display: inline-block;
   width: 50%;
@@ -310,6 +299,13 @@ li{
 div._2iwr {
   height: 200px;
   left: 175px;
+  right: auto;
+  top: 0;
+  width: 8px;
+}
+div._2iwl {
+  height: 200px;
+  left: 350px;
   right: auto;
   top: 0;
   width: 8px;

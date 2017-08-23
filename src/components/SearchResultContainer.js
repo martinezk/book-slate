@@ -11,7 +11,6 @@ class BookContainer extends Component {
   render() {
     const { searchState } = this.props;
     console.log(this.props);
-
     return (
       <div className="search-result-container">
         <Search addSearchResult={this.props.actions.addSearchResult} />

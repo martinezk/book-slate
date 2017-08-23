@@ -5,9 +5,11 @@ class PersonInput extends Component {
 
   onFormSubmit = (event) => {
     event.preventDefault();
+    let parentDiv = document.getElementById('current-members');
+    let childDiv = document.getElementById('contentArea');
+    parentDiv.removeChild(childDiv);
     const nameElement = document.getElementById('name');
     const emailElement = document.getElementById('email');
-
     this.props.addPerson({
       name: nameElement.value,
       email: emailElement.value

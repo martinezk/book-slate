@@ -11,7 +11,7 @@ const Members = () => {
 
   return (
     <div className="members-container">
-      <div className="current-members">
+      <div className="current-members" id="current-members">
         <h2>Current Members</h2>
         <div id="jane">
           <p className="jane name">Jane Austen</p>

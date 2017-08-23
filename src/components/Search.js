@@ -21,7 +21,6 @@ class Search extends Component {
   handleChange(event){
     this.setState({ query: event.target.value })
   }
-
   render() {
     return (
       <div className="search">

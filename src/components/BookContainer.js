@@ -1,15 +1,14 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import * as bookActions from '../actions/book-actions';
 import BookList from './BookList';
 
 
 class BookContainer extends Component {
   render() {
-    const {books} = this.props;
-
+    const { books } = this.props;
     return (
       <BookList books={books} />
     );
@@ -29,7 +28,7 @@ function mapStateToProps(state, props) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: bindActionCreators( bookActions, dispatch)
+    actions: bindActionCreators(bookActions, dispatch)
   }
 }
 
