@@ -118,11 +118,13 @@ li{
 }
 
 .results {
-  padding-top: 5px;
+  padding: 5px;
   border: 1px solid gray;
   width: 340px;
   display:inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-right: 10px;
 }
 .search-results button{
   display: inline-block;
@@ -133,6 +135,7 @@ li{
   background-color: #0066FF;
   color: #FFF;
   border: 2px solid #0066FF;
+  vertical-align: top;
 }
 .photo-credit {
   background-color:slategray;
@@ -206,7 +209,10 @@ li{
 .book-list{
   display: inline-block;
   overflow-y: auto;
+  height: 270px;
   width: 50%;
+  vertical-align: top;
+  margin-top: 5px;
 }
 .reading-list{
   width: 100%;
@@ -255,7 +261,7 @@ li{
 }
 
 ._2iwo {
-  height: 300px;
+  height: 250px;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 10px;

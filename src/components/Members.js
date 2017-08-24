@@ -18,19 +18,9 @@ const Members = () => {
           <p className="jane email">j.austen@nineteenthcentury.com</p>
           <a onClick={onDeleteItem} className="jane delete">&#10006;</a>
         </div>
-        <div id="contentArea">          
-            <div className="_2iwo">
-              <div className="_2iwq">
-                <div className="_2iwr"></div>
-                <div className="_2iwx"></div>
-                <div className="_2iwz"></div>
-                <div className="_2iw_"></div>
-              </div>
-            </div>
-        </div>
       </div>
       <PeopleContainer />
-    </div>
+    </div >
   );
 };
 export default Members;
