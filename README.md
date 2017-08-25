@@ -9,6 +9,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
   * HTML5 
   * CSS3
   * JavaScript
+  * [React](https://facebook.github.io/react/)
+  * [Redux](http://redux.js.org/)
 
 ## Back End 
   * [Node.js](https://nodejs.org/en/)
@@ -26,7 +28,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Hosting
   * Hosted on [Heroku](https://heroku.com/)
 
-##Development Roadmap
+## Development Roadmap
   * Incorporating OAuthentication for user management.
   * Build the capability to store member and book list data
   * Add email and chat features
