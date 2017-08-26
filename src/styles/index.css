@@ -119,7 +119,7 @@ li{
 
 .results {
   padding: 5px;
-  border: 1px solid gray;
+  border: 2px solid gray;
   width: 340px;
   display:inline-block;
   margin-left: 20px;
@@ -128,14 +128,18 @@ li{
 }
 .search-results button{
   display: inline-block;
-  width: 40px;
+  width: 45px;
   padding: 10px;
   font-size: 12px;
-  margin-left: 5px;
+  margin-left: 10px;
   background-color: #0066FF;
   color: #FFF;
   border: 2px solid #0066FF;
   vertical-align: top;
+}
+.search-results button:hover {
+  background-color:limegreen;
+  border: 2px solid limegreen;
 }
 .photo-credit {
   background-color:slategray;
@@ -179,7 +183,7 @@ li{
   border: 2px solid #0066FF;
 }
 .added-members{
-  height: 200px;
+  height: 215px;
   width:50%;
   overflow-y: auto;
   margin-bottom: 10px;
@@ -226,6 +230,10 @@ li{
   height: 300px;
   overflow-y: auto;
 }
+.description p{
+  text-align: center;
+  padding:0px 30px;
+}
 .about{
   text-align: center;
   width: 45%;
@@ -263,7 +271,7 @@ li{
 }
 
 ._2iwo {
-  height: 210px;
+  height: 200px;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 10px;

@@ -21,7 +21,7 @@ class BookContainer extends Component {
             books={searchState.results}
           />
           <div className="description">
-            {searchState.info}
+            <p>{searchState.info}</p>
           </div>
         </div>
       </div>
