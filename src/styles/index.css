@@ -178,6 +178,12 @@ li{
   color: #FFF;
   border: 2px solid #0066FF;
 }
+.added-members{
+  height: 200px;
+  width:50%;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
 .name {
   display: inline-block;
   margin-left: 20px;
@@ -195,11 +201,7 @@ li{
   padding: 5px;
   width: 280px;
 }
-.person-input{
-  position: fixed;
-  margin-top: 20px;
-  bottom: 80px
-}
+
 .person-input h3{
   margin-left: 20px;
 }
@@ -261,7 +263,7 @@ li{
 }
 
 ._2iwo {
-  height: 250px;
+  height: 210px;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 10px;

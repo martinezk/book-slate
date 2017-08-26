@@ -19,7 +19,7 @@ const PeopleList = ({ people }) => {
     );
   }
   return (
-    <div>
+    <div className="added-members">
       {placeholder}
       {people.map((person) =>
         <Person key={person.email} person={person} />
