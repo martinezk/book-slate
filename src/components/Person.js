@@ -1,16 +1,16 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import * as peopleActions from '../actions/people-actions';
 
 const Person = ({ person, actions }) => {
-  let onDeleteClick = function(){
-    let deleteEntry = window.confirm('Are you sure you want to delete this memeber?');   
-    if (deleteEntry === true){
+  let onDeleteClick = function () {
+    let deleteEntry = window.confirm('Are you sure you want to delete this member?');
+    if (deleteEntry === true) {
       actions.deletePerson(person);
-    } 
-};
+    }
+  };
 
   return (
     <div className="member-entry">
@@ -24,7 +24,7 @@ const Person = ({ person, actions }) => {
 Person.propTypes = {
   person: PropTypes.object.isRequired,
   people: PropTypes.array,
-  actions:  PropTypes.object.isRequired
+  actions: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, props) {

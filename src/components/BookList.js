@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Book from './Book';
 
-const BookList = ({ addBook, books, bookInfo }) => {
+const BookList = ({ addBook, books, bookInfo, removeBook }) => {
   let bookPlaceholder = null;
   if (books.length === 0) {
     bookPlaceholder = (
@@ -28,6 +28,7 @@ const BookList = ({ addBook, books, bookInfo }) => {
             bookInfo={bookInfo}
             key={book.volumeInfo.title}
             book={book}
+            removeBook={removeBook}
           />
         )}
       </div>
@@ -38,7 +39,8 @@ const BookList = ({ addBook, books, bookInfo }) => {
 BookList.propTypes = {
   books: PropTypes.array.isRequired,
   addBook: PropTypes.func,
-  bookInfo: PropTypes.func
+  bookInfo: PropTypes.func,
+  removeBook: PropTypes.func
 };
 
 export default BookList;

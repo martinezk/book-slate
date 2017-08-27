@@ -3,7 +3,7 @@ import PeopleContainer from './PeopleContainer';
 
 const Members = () => {
   let onDeleteItem = function () {
-    let deletePerson = window.confirm('Are you sure you want to delete this memeber?');
+    let deletePerson = window.confirm('Are you sure you want to delete this member?');
     if (deletePerson === true) {
       document.getElementById('jane').remove();
     };

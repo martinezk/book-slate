@@ -5,12 +5,11 @@ import { bindActionCreators } from 'redux';
 import * as bookActions from '../actions/book-actions';
 import BookList from './BookList';
 
-
 class BookContainer extends Component {
   render() {
-    const { books } = this.props;
+    const { books, actions } = this.props;
     return (
-      <BookList books={books} />
+      <BookList books={books} removeBook={actions.deleteBook}/>
     );
   }
 }

@@ -6,4 +6,10 @@ export const addBook = (book) => {
     book
   };
 }
+export const deleteBook = (book) => {
+  return {
+    type: types.DELETE_BOOK,
+    book
+  };
+}
 
