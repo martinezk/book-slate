@@ -5,15 +5,12 @@ body {
   width: 968px;
 }
 .main{
-  background-image: url(../images/home.jpg);
-  background-size: cover;
-  color: white;
-  font-size: 24px;
-  height: 420px;
   margin-top: 10px;
-  text-align: center;
-  font-weight: bold; 
   position: relative;
+}
+.main img{
+  width: 100%;
+  max-height: px;
 }
 .nav-bar{
   padding-top:10px;
@@ -78,7 +75,7 @@ li{
 }
 
 .top-nav {
-    background-color: gray;
+    background-color: darkgray;
 }
 
 .top-nav a {
@@ -90,10 +87,10 @@ li{
   font-size: 17px;
 }
 .top-nav .active{
-  background-color: limegreen;
+  background-color: #23364D;
 }
 .top-nav a:hover{
-  text-decoration: underline;
+  background-color: #18539A;
 }
 .search input{
   padding: 10px;
