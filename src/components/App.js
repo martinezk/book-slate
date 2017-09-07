@@ -5,7 +5,6 @@ import Dashboard from './Dashboard';
 import ReadingList from './ReadingList';
 import SearchResultContainer from './SearchResultContainer';
 import Home from './Home';
-import About from './About';
 import BasePage from './BasePage';
 import { connect } from 'react-redux';
 import {
@@ -44,11 +43,6 @@ class AppRouter extends Component {
           <Route path="/reading-list" render={(routeProps) => (
             <BasePage key={routeProps.location.pathname} {...props} {...routeProps}>
               <ReadingList />
-            </BasePage>
-          )} />
-          <Route path="/about" render={(routeProps) => (
-            <BasePage key={routeProps.location.pathname} {...props} {...routeProps}>
-              <About />
             </BasePage>
           )} />
         </div>

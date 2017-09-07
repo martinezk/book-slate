@@ -1,5 +1,5 @@
 body {
-  font-family: Helvetica, sans-serif;
+font-family: 'Josefin Sans', sans-serif;
 }
 .home:{
   width: 968px;
@@ -8,16 +8,28 @@ body {
   margin-top: 10px;
   position: relative;
 }
+.main h1 {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.25em;
+  padding: 20px 0px;
+  background-color: #f5eeee;
+}
 .main img{
   width: 100%;
   max-height: px;
 }
 .nav-bar{
-  padding-top:10px;
+  padding-top: 10px;
   height: 50px;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.fa{
+  color: #14099A;
 }
 li{
   text-align: center;
@@ -39,14 +51,13 @@ li{
 }
 .title a{
   font-weight: bold;
-  font-size: 22px;
+  font-size: 28px;
   text-decoration: none;
   color: #6196D5;
 }
 
 /*Dashboard styles*/
 .dashboard-main{
-  border: 1px solid darkgray;
   margin-left: auto;
   margin-right: auto;
   height: 450px;
@@ -58,14 +69,18 @@ li{
   text-align: center;
   margin-top: 45px;
 }
+.dashboard-choices a{
+  text-decoration: none;
+}
 .dashboard-choices h2{
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 22px;
+  color: #6196D5;
 }
 
 .dashboard-choices h3{
   text-decoration: none;
-  margin: 20px;
+  margin: 22px;
 }
 /*Footer styles*/
 .footer{
@@ -84,13 +99,13 @@ li{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 19px;
 }
 .top-nav .active{
-  background-color: #23364D;
+  background-color: #18539A;
 }
 .top-nav a:hover{
-  background-color: #18539A;
+  background-color: #206ECD;
 }
 .search input{
   padding: 10px;
@@ -98,6 +113,7 @@ li{
   border: 2px solid grey;
   margin-left: 20px;
   width: 242px;
+font-family: 'Josefin Sans', sans-serif;
 }
 .search-description, .search {
   margin-left: 10px;
@@ -117,12 +133,15 @@ li{
 
 .results {
   padding: 5px;
-  border: 2px solid gray;
   width: 340px;
   display:inline-block;
   margin-left: 20px;
   margin-bottom: 15px;
   margin-right: 10px;
+}
+.results h4{
+  font-size: 18px;
+  font-weight: bold;
 }
 .search-results button{
   display: inline-block;
@@ -130,20 +149,21 @@ li{
   padding: 10px;
   font-size: 12px;
   margin-left: 10px;
-  background-color: #0066FF;
+  background-color: #206ECD;
   color: #FFF;
-  border: 2px solid #0066FF;
+  border: 2px solid #206ECD;
   vertical-align: top;
 }
 .search-results button:hover {
-  background-color:limegreen;
-  border: 2px solid limegreen;
+  background-color:#18539A;
+  border: 2px solid #18539A;
 }
 .photo-credit {
   background-color:slategray;
   color:white;
   text-decoration:none;
-  padding:4px 6px;font-family:Helvetica, Arial, sans-serif;
+  padding:4px 6px;
+  font-family: 'Josefin Sans', sans-serif;
   font-size:12px;
   font-weight:bold;
   line-height:1.2;
@@ -167,10 +187,11 @@ li{
 }
 
 .members input{
-  padding: 10px;
+  padding: 9px;
   font-size: 16px;
   border: 2px solid grey;
   margin-right:10px;
+font-family: 'Josefin Sans', sans-serif;
 }
 .members button{
   padding: 10px;
@@ -179,6 +200,7 @@ li{
   background-color: #0066FF;
   color: #FFF;
   border: 2px solid #0066FF;
+font-family: 'Josefin Sans', sans-serif;
 }
 .added-members{
   height: 215px;
@@ -234,23 +256,8 @@ li{
   overflow-y: auto;
 }
 .description p{
-  text-align: center;
   padding:0px 30px;
-}
-.about{
-  text-align: center;
-  width: 45%;
-  margin-left:auto;
-  margin-right: auto;
-}
-.about h1{
-  font-size: 20px;
-  margin: 20px;
-  color: #0066FF;
-}
-.about h2{
-  font-size: 18px;
-  margin: 10px;
+  line-height: 1.35em;
 }
 .nominations{
   display: inline-block;
@@ -266,6 +273,11 @@ li{
 .nominations p{
   margin-bottom: 10px;
 }
+@media (max-width: 12450px) { 
+  .main img {
+    height: 425px;
+  }
+ }
 /*animation styles */
 
 

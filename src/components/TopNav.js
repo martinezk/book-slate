@@ -30,7 +30,6 @@ class TopNav extends Component {
             to="/reading-list">
             Reading List
           </Link>
-          <Link className={page==="/about" ? "active" : ""} to="/about" style={floatR} >About</Link>
         </div>
     );
   }
